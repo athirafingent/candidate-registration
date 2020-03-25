@@ -1,0 +1,45 @@
+<div class="container p-3">
+    <div class="row">
+      <div class="col-12">
+        <form>
+          <div class="card">
+            <div class="card-header"><b style="color: red;">Congratulations your registration has done successfully !</b></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="form-group col-6">
+                  <label>Name</label>
+                  <input class="form-control" type="text" value="{{ regDetails['name'] }}">
+                </div>
+                <div class="form-group col-6">
+                  <label>Gender</label>
+                  <input class="form-control" type="text" value="{{ regDetails['gender'] }}">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-6">
+                  <label>Age</label>
+                  <input class="form-control" type="text" value="{{ regDetails['age'] }}">
+                </div>
+                <div class="form-group col-6">
+                  <label>qualification</label>
+                  <input class="form-control" type="text" value="{{ regDetails['qualification'] }}">
+                </div>
+              </div>
+
+            </div>
+            <div class="card-header">Contact Information</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-6">
+                            <p> {{ regDetails['address'] }} </p>
+                            <p> {{ regDetails['city'] }} </p>
+                            <p> {{ regDetails['country'] }} </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
